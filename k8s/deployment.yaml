@@ -23,6 +23,7 @@ spec:
         runAsUser: 1000
         runAsGroup: 1000
         runAsNonRoot: true      
+      automountServiceAccountToken: false
       serviceAccountName: result-sa
       containers:
         - image: dockersamples/examplevotingapp_result
