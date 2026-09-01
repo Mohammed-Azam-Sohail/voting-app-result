@@ -1,0 +1,18 @@
+apiVersion: monitoring.coreos.com/v1
+kind: ServiceMonitor
+metadata:
+  name: result-metrics
+  namespace: monitoring
+  labels:
+    release: monitoring
+spec:
+  namespaceSelector:
+    matchNames:
+      - voting-app
+  selector:
+    matchLabels:
+      app: result
+  endpoints:
+    - port: result-service
+      path: /metrics
+      interval: 15s
