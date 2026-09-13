@@ -44,7 +44,7 @@ spec:
       automountServiceAccountToken: false
       serviceAccountName: result-sa
       containers:
-        - image: dockersamples/examplevotingapp_result
+        - image: azam92/voting-app-result:61ecc11409e2f191099c5f7540fbb37e97cc72c6
           name: result
 
           ports:
