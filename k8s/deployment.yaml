@@ -44,7 +44,7 @@ spec:
       automountServiceAccountToken: false
       serviceAccountName: result-sa
       containers:
-        - image: azam92/voting-app-result:296dcd12fcba63056aa1e6a66acb6d7622b93f18
+        - image: azam92/voting-app-result:9f85fe6d7a84e34fac14f2479a17b032369a8c67
           name: result
 
           ports:
